@@ -39,23 +39,6 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     backgroundColor: 'white',
   },
-  viewButton: {
-    alignItems: 'center',
-    marginTop: 50,
-  },
-  buttonRegister: {
-    width: '90%',
-    height: 60,
-    borderRadius: 30,
-    backgroundColor: '#50C2C9',
-    justifyContent: 'center',
-  },
-  textButton: {
-    textAlign: 'center',
-    fontSize: 20,
-    fontWeight: 'bold',
-    color: 'white',
-  },
 });
 
 export default styles;

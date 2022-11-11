@@ -4,7 +4,7 @@ import loginStyles from "../../styles/LoginStyles";
 // INPUTS
 import LoginInputs from "../inputs/LoginInputs";
 // BUTTON
-import LoginButton from "../buttons/LoginButton";
+import ButtonRyL from "../buttons/ButtonRyL";
 
 const Login = () => {
   return (
@@ -20,7 +20,7 @@ const Login = () => {
       <Pressable style={loginStyles.pressablePassword}>
         <Text style={loginStyles.textPressable}>Forgot password</Text>
       </Pressable>
-      <LoginButton/>
+      <ButtonRyL text='Log in'/>
     </View>
   )
 };
