@@ -4,7 +4,7 @@ import styles from "../../styles/ButtonRyLStyles";
 const ButtonRyL = (props) => {
   return (
     <View style={styles.buttonContainer}>
-      <TouchableOpacity onPress={() => {}}>
+      <TouchableOpacity onPress={props.onPress}>
         <Text style={styles.textButton}>{props.text}</Text>
       </TouchableOpacity>
     </View>

@@ -1,4 +1,4 @@
-import { View, Image, Text } from "react-native";
+import { View, Image, Text, Pressable } from "react-native";
 // ESTILOS
 import styles from "../../styles/RegisterStyles";
 // INPUTS
@@ -6,7 +6,14 @@ import RegisterInputs from "../inputs/RegisterInputs";
 // BUTTON
 import ButtonRyL from "../buttons/ButtonRyL";
 
-const Register = () => {
+const Register = (props) => {
+
+  const { navigation } = props;
+
+  const goLogin = () => {
+    navigation.navigate('Login')
+  };
+
   return (
     <View style={styles.container}>
       <Image
@@ -18,7 +25,12 @@ const Register = () => {
       </View>
       <RegisterInputs/>
       <ButtonRyL text='Register' />
-      <Text></Text> 
+      <View style={styles.viewSignIn}>
+        <Text style={styles.textSignin}>Already have an account?</Text>
+        <Pressable onPress={goLogin}>
+          <Text style={styles.pressableText}> Sign in</Text>
+        </Pressable>
+      </View>
     </View>
   )
 };

@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
     left: -50,
   },
   viewTexts: {
-    marginTop: -40,
+    marginTop: -10,
   },
   welcome: {
     fontWeight: 'bold',
@@ -38,6 +38,17 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     paddingHorizontal: 20,
     backgroundColor: 'white',
+  },
+  viewSignIn: {
+    flexDirection: 'row',
+    alignSelf: 'center',
+    marginTop: 15,
+  },
+  textSignin: {
+    color: 'black',
+  },
+  pressableText: {
+    color: '#50C2C9',
   },
 });
 

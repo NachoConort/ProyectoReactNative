@@ -1,26 +1,39 @@
 import { View, Image, Text, Pressable } from "react-native";
 // ESTILOS
-import loginStyles from "../../styles/LoginStyles";
+import styles from "../../styles/LoginStyles";
 // INPUTS
 import LoginInputs from "../inputs/LoginInputs";
 // BUTTON
 import ButtonRyL from "../buttons/ButtonRyL";
 
-const Login = () => {
+const Login = (props) => {
+
+  const { navigation } = props;
+
+  const goRegister = () => {
+    navigation.navigate('Register')
+  };
+
   return (
-    <View style={loginStyles.container}>
+    <View style={styles.container}>
       <Image
       source={require('../../assets/images/elipse.png')} 
-      style={loginStyles.elipseImage} />
-      <Text style={loginStyles.textWelcome}>Welcome Back!</Text>
+      style={styles.elipseImage} />
+      <Text style={styles.textWelcome}>Welcome Back!</Text>
       <Image 
       source={require('../../assets/images/login.png')}
-      style={loginStyles.phoneImage} />
+      style={styles.phoneImage} />
       <LoginInputs/>
-      <Pressable style={loginStyles.pressablePassword}>
-        <Text style={loginStyles.textPressable}>Forgot password</Text>
+      <Pressable style={styles.pressablePassword}>
+        <Text style={styles.textPressable}>Forgot password</Text>
       </Pressable>
       <ButtonRyL text='Log in'/>
+      <View style={styles.viewSignIn}>
+        <Text style={styles.textSignin}>Don't have an account?</Text>
+        <Pressable onPress={goRegister}>
+          <Text style={styles.pressableText}> Sign up</Text>
+        </Pressable>
+      </View>
     </View>
   )
 };
