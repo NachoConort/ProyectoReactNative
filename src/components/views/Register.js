@@ -4,7 +4,7 @@ import styles from "../../styles/RegisterStyles";
 // INPUTS
 import RegisterInputs from "../inputs/RegisterInputs";
 // BUTTON
-import RegisterButton from "../buttons/RegisterButton";
+import ButtonRyL from "../buttons/ButtonRyL";
 
 const Register = () => {
   return (
@@ -17,7 +17,7 @@ const Register = () => {
         <Text style={styles.smalltext}>Let's help you meet up your tasks.</Text>        
       </View>
       <RegisterInputs/>
-      <RegisterButton/>
+      <ButtonRyL text='Register' />
       <Text></Text> 
     </View>
   )
