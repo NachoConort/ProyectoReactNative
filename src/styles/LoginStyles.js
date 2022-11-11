@@ -1,6 +1,6 @@
 import { StyleSheet } from "react-native";
 
-const loginStyles = StyleSheet.create({
+const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#EDEDEE',
@@ -45,6 +45,17 @@ const loginStyles = StyleSheet.create({
     color: '#50C2C9',
     fontSize: 15,
   },
+  viewSignIn: {
+    flexDirection: 'row',
+    alignSelf: 'center',
+    marginTop: 10,
+  },
+  textSignin: {
+    color: 'black',
+  },
+  pressableText: {
+    color: '#50C2C9',
+  },
 });
 
-export default loginStyles;
+export default styles;
