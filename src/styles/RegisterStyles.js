@@ -13,6 +13,7 @@ const styles = StyleSheet.create({
   },
   viewTexts: {
     marginTop: -10,
+    marginBottom: 20
   },
   welcome: {
     fontWeight: 'bold',
@@ -25,19 +26,6 @@ const styles = StyleSheet.create({
     color: 'black',
     textAlign: 'center',
     marginTop: 20
-  },
-  viewinputs: {
-    alignItems: 'center',
-    marginTop: 40,
-  },
-  inputregister: {
-    width: '90%',
-    height: 50,
-    borderRadius: 30,
-    marginVertical: 10,
-    justifyContent: 'center',
-    paddingHorizontal: 20,
-    backgroundColor: 'white',
   },
   viewSignIn: {
     flexDirection: 'row',

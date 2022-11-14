@@ -23,19 +23,7 @@ const styles = StyleSheet.create({
     width: 200,
     alignSelf: 'center',
     marginTop: 20,
-  },
-  viewInputs: {
-    alignItems: 'center',
-    marginTop: 30,
-  },
-  inputlogin: {
-    width: '90%',
-    height: 50,
-    borderRadius: 30,
-    marginVertical: 10,
-    justifyContent: 'center',
-    paddingHorizontal: 20,
-    backgroundColor: 'white',
+    marginBottom: 20
   },
   pressablePassword: {
     alignSelf: 'center',
