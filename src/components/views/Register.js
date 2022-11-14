@@ -2,7 +2,7 @@ import { View, Image, Text, Pressable } from "react-native";
 // ESTILOS
 import styles from "../../styles/RegisterStyles";
 // INPUTS
-import RegisterInputs from "../inputs/RegisterInputs";
+import InputRyL from "../inputs/InputRyL";
 // BUTTON
 import ButtonRyL from "../buttons/ButtonRyL";
 
@@ -23,7 +23,10 @@ const Register = (props) => {
         <Text style={styles.welcome}>Welcome Onboard!</Text>
         <Text style={styles.smalltext}>Let's help you meet up your tasks.</Text>        
       </View>
-      <RegisterInputs/>
+      <InputRyL placeholder='Enter your full name' />
+      <InputRyL placeholder='Enter your e-mail' />
+      <InputRyL placeholder='Enter password' />
+      <InputRyL placeholder='Confirm password' />
       <ButtonRyL text='Register' />
       <View style={styles.viewSignIn}>
         <Text style={styles.textSignin}>Already have an account?</Text>
