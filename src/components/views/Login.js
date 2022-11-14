@@ -2,7 +2,7 @@ import { View, Image, Text, Pressable } from "react-native";
 // ESTILOS
 import styles from "../../styles/LoginStyles";
 // INPUTS
-import LoginInputs from "../inputs/LoginInputs";
+import InputRyL from "../inputs/InputRyL";
 // BUTTON
 import ButtonRyL from "../buttons/ButtonRyL";
 
@@ -23,7 +23,8 @@ const Login = (props) => {
       <Image 
       source={require('../../assets/images/login.png')}
       style={styles.phoneImage} />
-      <LoginInputs/>
+      <InputRyL placeholder='Enter your e-mail' />
+      <InputRyL placeholder='Enter password' />
       <Pressable style={styles.pressablePassword}>
         <Text style={styles.textPressable}>Forgot password</Text>
       </Pressable>
